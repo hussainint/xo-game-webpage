@@ -1,0 +1,693 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+   <title>xo game</title>
+   <link rel="stylesheet" type="text/css" href="xocss.css"/>
+
+
+<style>
+
+.rtt{
+    border: 0px solid black;
+  background-color:red;
+}
+
+#se{
+style="width:60px; height:60px; padding:0px;"
+}
+
+p{
+
+font-size:30px;
+color:blue;
+font-weight:bold;
+
+}
+#prt1{
+
+font-size:30px;
+color:RED;
+font-weight:bold;
+
+}
+#1p1{
+
+font-size:30px;
+color:RED;
+font-weight:bold;
+
+}
+
+SARWER HUSSAIN
+
+</style>
+
+ </head>
+ <body onload="ch()" text="#FFFFFF">
+    <div id="container">
+
+      <div id="header">
+        <MARQUEE><p>TIC TAC TOE</p></MARQUEE>
+      </div>
+
+      <div id="content">
+        <div id="main">
+          
+           <p style="font-size: 15px"><a id="aa" href="#score">SCORE</a></p>
+          <div id="game">
+            <div id="cent" >
+
+ 
+<table style="width: 300px;">
+
+<tr>
+<td><button onmousedown="im(1)" id="div1" style="background-color:#F0FFFF; padding:0px; width:60px; height:60px;  border:0px  black">   <IMG NAME="img1" style="width:60px; height:60px; padding:0px;"></button><p></p></td>
+ <td >
+<button onmousedown="im(2)" id="div2" style="background-color:#F0FFFF; padding:0px; width:60px; height:60px; border:0px  black"><IMG NAME="img2" style="width:60px; height:60px; padding:0px;"></button><p></p></td> 
+<td>
+<button onmousedown="im(3)" id="div3" style="background-color:#F0FFFF;  padding:0px; width:60px; height:60px; border:0px  black"><IMG NAME="img3" style="width:60px; height:60px; padding:0px;"></button><p></p></td>
+</tr>
+ 
+<tr>
+<td><button onmousedown="im(4)" id="div1" style="background-color:#F0FFFF; padding:0px; width:60px; height:60px;  border:0px  black">   <IMG NAME="img4" style="width:60px; height:60px;"></button><p></p></td>
+ <td >
+<button onmousedown="im(5)" id="div2" style="background-color:white; padding:0px; width:60px; height:60px; border:0px  black"><IMG NAME="img5" style="width:60px; height:60px; padding:0px;"></button><p></p></td> 
+<td>
+<button onmousedown="im(6)" id="div3" style="background-color:#F0FFFF;  padding:0px; width:60px; height:60px; border:0px  black"><IMG NAME="img6" style="width:60px; height:60px; padding:0px;"></button><p></p></td>
+</tr>
+
+
+<tr>
+<td><button onmousedown="im(7)" id="div1" style="background-color:#F0FFFF; padding:0px; width:60px; height:60px;  border:0px  black">   <IMG NAME="img7" style="width:60px; height:60px;"></button><p></p></td>
+ <td >
+<button onmousedown="im(8)" id="div2" style="background-color:#F0FFFF; padding:0px; width:60px; height:60px; border:0px  black"><IMG NAME="img8" style="width:60px; height:60px; padding:0px;"></button><p></p></td> 
+<td>
+<button onmousedown="im(9)" id="div3" style="background-color:#F0FFFF;  padding:0px; width:60px; height:60px; border:0px  black"><IMG NAME="img9" style="width:60px; height:60px; padding:0px;"> </button><p></p></td>
+</tr>
+
+
+</TABLE>
+</div>
+          </div>
+          <div id="extrw">
+            <button class="button button5" value="restart" onmousedown="ch()">PLAY AGAIN</button>.................
+<BUTTON class="button button5" value="refresh" onclick="window.location.reload()">CHANGE PLAYERS</BUTTON>
+
+
+<p id="print"  ></P>
+<p id="print1"  ></P>
+          </div>
+
+        </div>
+        
+              </div>
+<div id="score">
+          
+<table >
+  <tr>
+    <th><p id="prt1" ></P></th>
+  
+    <th><p id="prt2"></p></th>
+  </tr>
+  <tr>
+  
+    <td><p id="1p1" style="color:blue;"></p></td>
+  
+    <td><p id="1p2" style="color:blue;"></p></td>
+  </tr>
+  <tr>
+  
+    <td><p id="2p1" style="color:blue;"></p></td>
+    <td><p id="2p2" style="color:blue;"></p></td>
+  </tr>
+  <tr>
+  
+    <td><p id="3p1" style="color:blue;"></p></td>
+    <td><p id="3p2" style="color:blue;"></p></td>
+  </tr>
+  <tr>
+  
+    <td><p id="4p1" style="color:blue;"></p></td>
+    <td><p id="4p2" style="color:blue;"></p></td>
+  </tr>
+  <tr>
+  
+    <td><p id="5p1" style="color:blue;"></p></td>
+    <td><p id="5p2" style="color:blue;"></p></td>
+  </tr>
+  <tr>
+  
+    <td><p >-------------</p></td>
+    <td><p >-------------</p></td>
+  </tr>
+  <tr>
+  
+    <td><p id="tot1" style="color:red;">Total:</p></td>
+    <td><p id="tot2" style="color:blue;"></p></td>
+  </tr>
+  <tr>
+  <td>
+    <p id="last1"style="color:orange;"></p></td>
+   <td> <p id="last2" style="color:orange;"></p></td>
+  </tr>
+  
+</table>
+
+
+
+<br><br><br>
+
+
+        </div>
+
+
+      <div id="footer">
+        
+      Copyright &copy; 2018 sarwer hussain
+      </div>
+    </div>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ <script type="text/javascript"> 
+var kki=0;
+var cu=1,t1=0,t2=0;
+var a=1,pi=0,pt=0;
+var points = new Array(5);     
+var pts = new Array(5); 
+var vria=new Array(10);
+vria[0]=0;
+var i=0,tem,j;
+var ii=0,te,jj;
+var pl1,pl2;
+var per1,pre2;
+var ze ="0";
+
+    var zer = ze.fontcolor("RED");
+var dt=""; 
+var dot=dt.fontcolor("white");
+    var on ="1";
+    var one = on.fontcolor("RED");
+var norep=new Array(10);
+var ki,cch=1;
+function im(s){ 
+if(cu!=6&&vria[0]==0){
+cch=1;
+for(ki=0;ki<a-1;ki++)
+{
+if(norep[ki]==s){
+
+cch=0;}
+}
+if(((a%2)!=0)&&(cch==1)){
+
+document.images['img'+s].src='x.png';
+norep[a-1]=s;
+ar1(s);
+}
+
+if(((a%2)==0)&&(cch==1)){
+document.images['img'+s].src='o.png';
+norep[a-1]=s;
+ar2(s);
+}
+if(cch==1)
+++a;
+}
+}
+function ar1(ss)
+{
+tem=0,j=0,i=0;
+points[pi]=ss;
+++pi;
+if(pi>=3)
+{
+i=0;
+for(i=0;i<pi;i++)
+{
+for(j=0;j<pi-1;j++)
+{
+if(points[j]>points[j+1])
+{tem=points[j];
+points[j]=points[j+1];
+points[j+1]=tem;}
+}}
+
+for(i=0;i<pi;i++)
+{
+if(points[i]==1)
+{
+   for(j=i;j<pi;j++)
+   {
+     if(points[j]==2)//123
+       {
+          for(z=j;z<pi;z++){
+               if(points[z]==3)
+                 {
+                    document.getElementById("print").innerHTML = dot+" "+per1+" wins";
+
+
+                      vria[0]=1;
+                      rtpt(1);
+                       document.getElementById('aa').click();
+
+                       break; 
+                 }
+         }
+        }
+    
+    if(points[j]==4)//147
+       {
+          for(z=j;z<pi;z++){
+               if(points[z]==7)
+                 {
+                   document.getElementById("print").innerHTML =dot+" "+ per1+" wins";
+           vria[0]=1;
+           rtpt(1);
+                       document.getElementById('aa').click();
+
+                      break;
+                       i=pi+5;
+                 }
+         }
+        }
+    
+    
+    if(points[j]==5)//159
+       {
+          for(z=j;z<pi;z++){
+               if(points[z]==9)
+                 {
+                    document.getElementById("print").innerHTML = dot+" "+per1+" wins";
+          vria[0]=1;
+          rtpt(1);
+                       document.getElementById('aa').click();
+
+                      break;
+                       i=pi+5;
+                 }
+         }
+        }
+    
+    }}
+  if(points[i]==2)
+{
+   for(j=i;j<pi;j++)
+   {
+     if(points[j]==5)//258
+       {
+          for(z=j;z<pi;z++){
+               if(points[z]==8)
+                 {
+                    document.getElementById("print").innerHTML = dot+" "+per1+" wins";
+          vria[0]=1;
+          rtpt(1);
+                       document.getElementById('aa').click();
+
+                      break;
+                       i=pi+5;
+                 }
+         }
+        }
+    
+    }
+ }
+ if(points[i]==3)
+{
+   for(j=i;j<pi;j++)
+   {
+     if(points[j]==6)//369
+       {
+          for(z=j;z<pi;z++){
+               if(points[z]==9)
+                 {
+                    document.getElementById("print").innerHTML = dot+" "+per1+" wins";
+          vria[0]=1;
+          rtpt(1);
+                       document.getElementById('aa').click();
+
+                      break;
+                       i=pi+5;
+                 }
+         }
+        }
+    if(points[j]==5)//357
+       {
+          for(z=j;z<pi;z++){
+               if(points[z]==7)
+                 {
+                    document.getElementById("print").innerHTML = dot+" "+per1+" wins";
+          vria[0]=1;
+          rtpt(1);
+                       document.getElementById('aa').click();
+
+                      break;
+                       i=pi+5;
+                 }
+         }
+        }
+    
+    }
+ }
+ if(points[i]==4)
+{
+   for(j=i;j<pi;j++)
+   {
+     if(points[j]==5)//258
+       {
+          for(z=j;z<pi;z++){
+               if(points[z]==6)
+                 {
+                    document.getElementById("print").innerHTML = dot+" "+per1+" wins";
+          vria[0]=1;
+          rtpt(1);
+                       document.getElementById('aa').click();
+
+                      break;
+                       i=pi+5;
+                 }
+         }
+        }
+    
+    }
+ }
+ if(points[i]==7)
+{
+   for(j=i;j<pi;j++)
+   {
+     
+    if(points[j]==8)//789
+       {
+          for(z=j;z<pi;z++){
+               if(points[z]==9)
+                 {
+                    document.getElementById("print").innerHTML =dot+" "+ per1+" wins";
+          vria[0]=1;
+          rtpt(1);
+                       document.getElementById('aa').click();
+
+                      break;
+                       i=pi+5;
+                 }
+         }
+        }
+    
+    }
+ }
+}}
+
+if(pi==5)
+document.getElementById("print").innerHTML = dot+" DRAW ";
+
+}
+
+function ar2(ss)
+{
+tem=0,j=0,i=0;
+pts[pt]=ss;
+++pt;
+if(pt>=3)
+{
+i=0;
+for(i=0;i<pt;i++)
+{
+for(j=0;j<pt-1;j++)
+{
+if(pts[j]>pts[j+1])
+{tem=pts[j];
+pts[j]=pts[j+1];
+pts[j+1]=tem;}
+}}
+
+for(i=0;i<pt;i++)
+{
+if(pts[i]==1)
+{
+   for(j=i;j<pt;j++)
+   {
+     if(pts[j]==2)//123
+       {
+          for(z=j;z<pt;z++){
+               if(pts[z]==3)
+                 {
+                    document.getElementById("print").innerHTML = dot+" "+per2+" wins";
+
+          vria[0]=1;
+          rtpt(2);
+                       document.getElementById('aa').click();
+
+                      break;
+                       i=pt+5;
+                 }
+         }
+        }
+    
+    if(pts[j]==4)//147
+       {
+          for(z=j;z<pt;z++){
+               if(pts[z]==7)
+                 {
+                    document.getElementById("print").innerHTML = dot+" "+per2+" wins";
+          vria[0]=1;
+          rtpt(2);
+                       document.getElementById('aa').click();
+
+                      break;
+                       i=pt+5;
+                 }
+         }
+        }
+    
+    
+    if(pts[j]==5)//159
+       {
+          for(z=j;z<pt;z++){
+               if(pts[z]==9)
+                 {
+                   
+                    document.getElementById("print").innerHTML = dot+" "+per2+"wins";
+          vria[0]=1;
+          rtpt(2);
+                       document.getElementById('aa').click();
+
+                      break;
+                       i=pt+5;
+                 }
+         }
+        }
+    
+    }}
+  if(pts[i]==2)
+{
+   for(j=i;j<pt;j++)
+   {
+     if(pts[j]==5)//258
+       {
+          for(z=j;z<pt;z++){
+               if(pts[z]==8)
+                 {
+                  
+                    document.getElementById("print").innerHTML =dot+" "+ per2+" wins";
+          vria[0]=1;
+          rtpt(2);
+                       document.getElementById('aa').click();
+
+                      break;
+                       i=pt+5;
+                 }
+         }
+        }
+    
+    }
+ }
+ if(pts[i]==3)
+{
+   for(j=i;j<pt;j++)
+   {
+     if(pts[j]==6)//369
+       {
+          for(z=j;z<pt;z++){
+               if(pts[z]==9)
+                 {
+                   
+                    document.getElementById("print").innerHTML =dot+" "+ per2+" wins";
+          vria[0]=1;
+          rtpt(2);
+                       document.getElementById('aa').click();
+
+                      break;
+                       i=pt+5;
+                 }
+         }
+        }
+    if(pts[j]==5)//357
+       {
+          for(z=j;z<pt;z++){
+               if(pts[z]==7)
+                 {
+                   
+                    document.getElementById("print").innerHTML =dot+" "+ per2+" wins";
+          vria[0]=1;
+          rtpt(2);
+                       document.getElementById('aa').click();
+
+                      break;
+                       i=pt+5;
+                 }
+         }
+        }
+    
+    }
+ }
+ if(pts[i]==4)
+{
+   for(j=i;j<pt;j++)
+   {
+     if(pts[j]==5)//258
+       {
+          for(z=j;z<pt;z++){
+               if(pts[z]==6)
+                 {
+                    document.getElementById("print").innerHTML = dot+" "+per2+" wins";
+          vria[0]=1;
+          rtpt(2);
+                       document.getElementById('aa').click();
+
+                      break;
+                       i=pt+5;
+                 }
+         }
+        }
+    
+    }
+ }
+ if(pts[i]==7)
+{
+   for(j=i;j<pt;j++)
+   {
+     
+    if(pts[j]==8)//789
+       {
+          for(z=j;z<pt;z++){
+               if(pts[z]==9)
+                 {
+                    
+                    document.getElementById("print").innerHTML = dot+" "+per2+" wins";
+          vria[0]=1;
+          rtpt(2);
+                       document.getElementById('aa').click();
+
+                      break;
+                       i=pt+5;
+                 }
+         }
+        }
+    
+    }
+ }
+}}
+
+
+if(pi==5&&vria[0]==0)
+document.getElementById("print").innerHTML = dot+" DRAW ";
+}
+
+var f=0;
+function ch()
+{
+
+vria[0]=0;
+if(f==0){
+     per1 = prompt("Enter Player1 name", "Sarwer");
+      per2 = prompt("Enter Player2 name", "Harry Poter");
+    ++f;
+    }
+    if(per1!=null&&per2!=null){
+    per2="  "+per2;
+document.getElementById("prt1").innerHTML = per1;
+document.getElementById("prt2").innerHTML = per2;
+}
+else{
+
+document.getElementById("prt1").innerHTML = "PLAYER 1";
+document.getElementById("prt2").innerHTML = "PLAYER 2";
+}
+var i;
+a=1;
+for(i=0;i<pi;i++)
+{
+points[i]=0;
+}
+for(i=0;i<pt;i++)
+{
+pts[i]=0;
+}
+for(i=1;i<=9;i++){
+document.images['img'+i].src='bck.png';
+}
+document.getElementById("print").innerHTML = "";
+
+
+
+pi=0,pt=0;
+
+}
+function rtpt(no)
+{
+
+if(cu==5)
+{
+
+                    document.getElementById("print1").innerHTML =dot+" "+"GAME OVER";
+}
+if(no==1)
+{
+
+
+document.getElementById(cu+"p1").innerHTML = "    "+one;
+++t1;
+document.getElementById(cu+"p2").innerHTML = "     "+"0";
+}
+if(no==2){
+++t2;
+document.getElementById(cu+"p1").innerHTML = "     "+zer;
+document.getElementById(cu+"p2").innerHTML = "     "+"1";
+}
+++cu;
+document.getElementById("tot1").innerHTML = t1;
+document.getElementById("tot2").innerHTML = t2;
+
+
+if(cu==6)
+{
+
+                    document.getElementById("print1").innerHTML =dot+" "+"GAME OVER";
+}
+vria[1]=1;
+if(t1>t2){
+document.getElementById("last1").innerHTML =per1+" is in LEAD";
+document.getElementById("last2").innerHTML =" ";
+vria[1]=1;
+}
+if(t1<t2){
+document.getElementById("last2").innerHTML =per2+" is in LEAD";
+document.getElementById("last1").innerHTML =" ";
+vria[1]=2;
+}
+if(t1==t2)
+document.getElementById("last"+vria[1]).innerHTML ="DRAW";
+}
+</script>
+ </body>
+ </html>
